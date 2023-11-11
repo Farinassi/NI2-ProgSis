@@ -1,4 +1,16 @@
 package com.example.projNI2.time;
 
-public record DadosTime(String nome, int anoFund, String cidade, String estado) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record DadosTime(
+        @NotBlank(message = "O campo não pode ser vazio")
+        String nome,
+        @NotBlank(message = "O campo não pode ser vazio")
+        String anofund,
+        @NotBlank(message = "O campo não pode ser vazio")
+        String cidade,
+        @NotBlank(message = "O campo não pode ser vazio")
+        String estado
+) {
 }
