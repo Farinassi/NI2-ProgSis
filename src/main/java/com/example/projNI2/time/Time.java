@@ -1,18 +1,15 @@
 package com.example.projNI2.time;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
 @Table(name = "times")
-@Entity(name = "time")
+@Entity(name = "com/example/projNI2/jogo")
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Time {
-
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;

@@ -1,0 +1,2 @@
+ALTER TABLE paises
+MODIFY COLUMN populacao VARCHAR(15);
