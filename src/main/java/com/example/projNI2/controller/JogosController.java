@@ -1,6 +1,7 @@
 package com.example.projNI2.controller;
 
 import com.example.projNI2.jogo.*;
+import com.example.projNI2.pais.Pais;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,11 @@ public class JogosController {
     @Transactional
     public void deletarJogo(@PathVariable Long id){
         repository.deleteById(id);
+    }
+
+    @GetMapping("/pesquisa")
+    public List<Jogo> mostrarJogoPeloTimeA(@RequestParam String nome){
+        return repository.findByNomeIgnoreCaseContaining(nome);
     }
 
 

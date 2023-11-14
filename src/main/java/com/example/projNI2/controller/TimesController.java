@@ -48,8 +48,8 @@ public class TimesController {
         repository.deleteById(id);
     }
 
-    @GetMapping("?nome={nome}")
-    public List<Time> mostrarTime(@PathVariable String nome){
-        return timeRepository.findByNomeIgnoreCaseContaining(nome);
+    @GetMapping("/pesquisa")
+    public List<Time> mostrarTime(@RequestParam String nome){
+        return repository.findByNomeIgnoreCaseContaining(nome);
     }
 }

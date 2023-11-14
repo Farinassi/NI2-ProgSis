@@ -1,6 +1,7 @@
 package com.example.projNI2.controller;
 
 import com.example.projNI2.cidade.*;
+import com.example.projNI2.time.Time;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,11 @@ public class CidadesController {
     @Transactional
     public void deletarCidade(@PathVariable Long id) {
         repository.deleteById(id);
+    }
+
+    @GetMapping("/pesquisa")
+    public List<Cidade> mostrarCidade(@RequestParam String nome){
+        return repository.findByNomeIgnoreCaseContaining(nome);
     }
 
 }

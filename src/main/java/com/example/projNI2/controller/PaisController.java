@@ -1,6 +1,7 @@
 package com.example.projNI2.controller;
 
 import com.example.projNI2.pais.*;
+import com.example.projNI2.time.Time;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -45,5 +47,10 @@ public class PaisController {
     @Transactional
     public void deletarCidade(@PathVariable Long id) {
         repository.deleteById(id);
+    }
+
+    @GetMapping("/pesquisa")
+    public List<Pais> mostrarPais(@RequestParam String nome){
+        return repository.findByNomeIgnoreCaseContaining(nome);
     }
 }
