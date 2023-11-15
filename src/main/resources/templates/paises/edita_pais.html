@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITAR PAÍS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/base/base.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../../static/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+    <link rel="stylesheet" href="../../static/css/cadastrar.css">
+    <link rel="stylesheet" href="../../static/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>EDITAR PAÍS</h1>
+    </header>
+
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Atualizar País</h1>
+            <form class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input id="id" class="input" type="text" placeholder="Id" required />
+                    <label class="input-label" for="nome">Id</label>
+                </div>
+                <div class="input-container">
+                    <input id="nome" class="input" type="text" placeholder="Nome" required />
+                    <label class="input-label" for="nome">Nome</label>
+                </div>
+                <div class="input-container">
+                    <input id="continente" class="input" type="text" placeholder="Continente" required />
+                    <label class="input-label" for="anofund">Continente</label>
+                </div>
+                <div class="input-container">
+                    <input id="populacao" class="input" type="text" placeholder="População" required />
+                    <label class="input-label" for="cidade">População</label>
+                </div>
+                <button type="submit" class="botao" onclick="atualizarPais()">
+                    Atualizar
+                </button>
+            </form>
+            <a href="listar_pais.html">Voltar para o início</a>
+        </section>
+    </main>
+</body>
+
+<script src="../../static/js/paises/paises.js">
+    
+</script>
+
+
+</html>

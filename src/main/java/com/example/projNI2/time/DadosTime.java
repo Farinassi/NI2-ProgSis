@@ -1,7 +1,6 @@
 package com.example.projNI2.time;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 public record DadosTime(
         @NotBlank(message = "O campo não pode ser vazio")

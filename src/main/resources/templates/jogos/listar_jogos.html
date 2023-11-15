@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/base/base.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../../static/css/listar.css">
+    <link rel="stylesheet" href="../../static/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+    <link rel="stylesheet" href="../../static/css/componentes/modal.css">
+    <title>JOGOS</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>JOGOS</h1>
+    </header>
+
+    <section class="container flex flex--centro flex--coluna">
+        <nav class="cartao cadastro">
+            <h1 class="cartao__titulo">Pesquisar por id</h1>
+            <form class="flex" id="formulario">
+                <div class="input-container">
+                    <input id="id" class="input" type="text" placeholder="Id" required />
+                </div>
+                <button type="submit" class="botao-simples--adicionar" onclick="pesquisarJogoId()">
+                    Pesquisar
+                </button>
+            </form>
+            <h1 class="cartao__titulo">Pesquisar por nome</h1>
+            <form class="flex" id="formulario2">
+                <div class="input-container">
+                    <input id="nome" class="input" type="text" placeholder="Nome" required />
+                </div>
+                <button type="submit" class="botao-simples--adicionar" onclick="pesquisarJogoNome()">
+                    Pesquisar
+                </button>
+            </form>
+        </nav>
+    </section>
+
+
+
+    <main class="clientes-container">
+        <table class="tabela">
+            <thead>
+                
+                <tr>
+                    <th class="tabela__coluna--p">ID</th>
+                    <th class="tabela__coluna--p">Nome A</th>
+                    <th class="tabela__coluna--p">Nome B</th>
+                    <th class="tabela__coluna--p">Gol(s) A</th>
+                    <th class="tabela__coluna--p">Gol(s) B</th>
+                    <th class="tabela__coluna--m tabela__alinhamento--direita"><a href="./cadastra_jogo.html"
+                            class="botao-simples botao-simples--adicionar">Novo País</a></th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+
+            </tbody>
+        </table>
+        <div class="modal-container modal--fechado">
+            <article class="modal">
+                <h2 class="modal__titulo">
+                    Excluir
+                </h2>
+                <button class="modal__fechar">X</button>
+                <p class="modal__texto">Deseja excluir essa entrada?</p>
+                <div class="modal__botao-container">
+                    <button class="modal__botao modal__botao--confirmar">Excluir</button>
+                    <button class="modal__botao">Não excluir</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+</body>
+
+</html>
+<script src="../../static/js/jogos/jogos.js"></script>

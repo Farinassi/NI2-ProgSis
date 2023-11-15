@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIAR JOGO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/base/base.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../../static/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+    <link rel="stylesheet" href="../../static/css/cadastrar.css">
+    <link rel="stylesheet" href="../../static/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>CADASTRAR JOGO</h1>
+    </header>
+
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Novo Jogo</h1>
+            <form class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input id="nome" class="input" type="text" placeholder="Nome time A" required />
+                    <label class="input-label" for="nome">Nome time A</label>
+                </div>
+                <div class="input-container">
+                    <input id="nomeB" class="input" type="text" placeholder="Nome time B" required />
+                    <label class="input-label" for="nome">Nome time B</label>
+                </div>
+                <div class="input-container">
+                    <input id="golsA" class="input" type="text" placeholder="Gols time A" required />
+                    <label class="input-label" for="cidade">Gols time A</label>
+                </div>
+                <div class="input-container">
+                    <input id="golsB" class="input" type="text" placeholder="Gols time B" required />
+                    <label class="input-label" for="cidade">Gols time B</label>
+                </div>
+                <button type="submit" class="botao" onclick="criarJogo()">
+                    Cadastrar
+                </button>
+            </form>
+            <a href="listar_jogos.html">Voltar para o início</a>
+        </section>
+    </main>
+</body>
+
+<script src="../../static/js/jogos/jogos.js">
+    
+</script>
+
+
+</html>
