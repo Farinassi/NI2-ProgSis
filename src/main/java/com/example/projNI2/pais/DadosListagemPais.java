@@ -1,6 +1,5 @@
 package com.example.projNI2.pais;
 
-import com.example.projNI2.cidade.Cidade;
 
 public record DadosListagemPais(
         Long id,

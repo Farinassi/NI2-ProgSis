@@ -1,6 +1,5 @@
 package com.example.projNI2.pais;
 
-import com.example.projNI2.cidade.DadosCidade;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

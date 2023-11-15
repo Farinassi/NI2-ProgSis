@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDITAR TIME</title>
+    <title>CRIAR CIDADE</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../static/css/base/base.css">
@@ -20,43 +20,39 @@
 <body>
 
     <header class="cabecalho">
-        <h1>EDITAR TIMES</h1>
+        <h1>CADASTRAR CIDADE</h1>
     </header>
 
     <main class="container flex flex--centro flex--coluna">
         <section class="cartao cadastro">
-            <h1 class="cartao__titulo">Atualizar Time</h1>
+            <h1 class="cartao__titulo">Nova Cidade</h1>
             <form class="flex flex--coluna" data-form>
-                <div class="input-container">
-                    <input id="id" class="input" type="text" placeholder="Id" required />
-                    <label class="input-label" for="nome">Id</label>
-                </div>
                 <div class="input-container">
                     <input id="nome" class="input" type="text" placeholder="Nome" required />
                     <label class="input-label" for="nome">Nome</label>
                 </div>
                 <div class="input-container">
-                    <input id="anofund" class="input" type="text" placeholder="Ano de Fundação" required />
-                    <label class="input-label" for="anofund">Ano de Fundação</label>
-                </div>
-                <div class="input-container">
-                    <input id="cidade" class="input" type="text" placeholder="Cidade" required />
-                    <label class="input-label" for="cidade">Cidade</label>
-                </div>
-                <div class="input-container">
                     <input id="estado" class="input" type="text" placeholder="Estado" required />
-                    <label class="input-label" for="estado">Estado</label>
+                    <label class="input-label" for="cidade">Estado</label>
                 </div>
-                <button type="submit" class="botao" onclick="atualizarTime()">
-                    Atualizar
+                <div class="input-container">
+                    <input id="pais" class="input" type="text" placeholder="País" required />
+                    <label class="input-label" for="cidade">País</label>
+                </div>
+                <div class="input-container">
+                    <input id="populacao" class="input" type="text" placeholder="População" required />
+                    <label class="input-label" for="estado">População</label>
+                </div>
+                <button type="submit" class="botao" onclick="criarCidade()">
+                    Cadastrar
                 </button>
             </form>
-            <a href="listar_times.html">Voltar para o início</a>
+            <a href="listar_cidades.html">Voltar para o início</a>
         </section>
     </main>
 </body>
 
-<script src="../../static/js/times/times.js">
+<script src="../../static/js/cidades/cidades.js">
     
 </script>
 

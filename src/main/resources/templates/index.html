@@ -5,6 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+            color: aliceblue;
+        }
+        body{
+            height: 100vh;
+            background-image: linear-gradient(blue, white);
+        }
+        h1{
+            text-align: center;
+        }
+        main{
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+
+        }
+        section{
+            display: flex;
+            width: 50vw;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            height: 50vh;
+        }
+
+        button{
+            width: 10rem;
+            border: 0;
+            height: 10rem;
+            background-color: blue;
+        }
+
+
+
+    </style>
     <title>PÁGINA INICIAL</title>
 </head>
 
@@ -17,15 +59,15 @@
                 <a href="../templates/times/listar_times.html">
                     <button>TIMES</button>
                 </a>
-                <a href="jogos.html">
+                <a href="../templates/jogos/listar_jogos.html">
                     <button>JOGOS</button>
                 </a>
             </section>
             <section>
-                <a href="times.html">
+                <a href="../templates/paises/listar_pais.html">
                     <button>PAÍSES</button>
                 </a>
-                <a href="jogos.html">
+                <a href="../templates/cidades/listar_cidades.html">
                     <button>CIDADES</button>
                 </a>
             </section>
