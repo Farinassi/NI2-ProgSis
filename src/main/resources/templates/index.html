@@ -4,38 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>PÁGINA INICIAL</title>
 </head>
 
 <body>
 
-    <button onclick="getJogos()">SUBMIT</button>
+        <h1>PÁGINA INICIAL</h1>
+
+        <main>
+            <section>
+                <a href="../templates/times/listar_times.html">
+                    <button>TIMES</button>
+                </a>
+                <a href="jogos.html">
+                    <button>JOGOS</button>
+                </a>
+            </section>
+            <section>
+                <a href="times.html">
+                    <button>PAÍSES</button>
+                </a>
+                <a href="jogos.html">
+                    <button>CIDADES</button>
+                </a>
+            </section>
+        </main>
 
 </body>
 
 </html>
-
-<script>
-    const apiJogos = "http://localhost:8080/jogos"
-
-    function getJogos() {
-        // Fazendo a requisição GET usando fetch
-        fetch(apiJogos)
-            .then(response => {
-                // Verificando se a requisição foi bem-sucedida (status 200-299)
-                if (!response.ok) {
-                    throw new Error(`Erro na requisição: ${response.status}`);
-                }
-                // Parseando a resposta como JSON
-                return response.json();
-            })
-            .then(data => {
-                // Manipulando os dados recebidos
-                console.log(data);
-            })
-            .catch(error => {
-                // Tratando erros
-                console.error('Erro na requisição:', error);
-            });
-    }
-</script>

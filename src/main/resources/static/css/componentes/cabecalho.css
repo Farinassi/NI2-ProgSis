@@ -1,0 +1,23 @@
+
+.cabecalho {
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--sombra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.75rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.cabecalho__logo {
+    width: 3rem;
+}
+
+.cabecalho__lista-navegacao {
+    display: flex;
+}
+
+.cabecalho__link {
+    margin-left: 2rem;
+}

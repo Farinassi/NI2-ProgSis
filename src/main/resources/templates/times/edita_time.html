@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIAR TIME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/base/base.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../../static/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../../static/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+    <link rel="stylesheet" href="../../static/css/cadastrar.css">
+    <link rel="stylesheet" href="../../static/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../../static/css/componentes/botao.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>EDITAR TIMES</h1>
+    </header>
+
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Atualizar Time</h1>
+            <form class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input id="id" class="input" type="text" placeholder="Id" required />
+                    <label class="input-label" for="nome">Id</label>
+                </div>
+                <div class="input-container">
+                    <input id="nome" class="input" type="text" placeholder="Nome" required />
+                    <label class="input-label" for="nome">Nome</label>
+                </div>
+                <div class="input-container">
+                    <input id="anofund" class="input" type="text" placeholder="Ano de Fundação" required />
+                    <label class="input-label" for="anofund">Ano de Fundação</label>
+                </div>
+                <div class="input-container">
+                    <input id="cidade" class="input" type="text" placeholder="Cidade" required />
+                    <label class="input-label" for="cidade">Cidade</label>
+                </div>
+                <div class="input-container">
+                    <input id="estado" class="input" type="text" placeholder="Estado" required />
+                    <label class="input-label" for="estado">Estado</label>
+                </div>
+                <button type="submit" class="botao" onclick="atualizarTime()">
+                    Atualizar
+                </button>
+            </form>
+            <a href="listar_times.html">Voltar para o início</a>
+        </section>
+    </main>
+</body>
+
+<script src="../../static/js/times/times.js">
+    
+</script>
+
+
+</html>
